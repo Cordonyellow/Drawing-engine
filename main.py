@@ -1,16 +1,12 @@
-"""
-This is the Template Repl for Python with Turtle.
-
-Python with Turtle lets you make graphics easily in Python.
-
-Check out the official docs here: https://docs.python.org/3/library/turtle.html
-"""
-
 import turtle
-
+from random import randint
+turtle.bgcolor("white")
 t = turtle.Turtle()
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 
-for c in ['red', 'green', 'blue', 'black']:
+for c in colors:
     t.color(c)
     t.forward(75)
-    t.left(90)
+    t.left(len(colors)*randint(5, 22))
+
+
